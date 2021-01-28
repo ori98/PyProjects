@@ -8,7 +8,7 @@ root = tk.Tk()                          #consists of the entire structure
 apps = []
 
 
-#saving the last opened apps
+#reading the last opened apps
 if os.path.isfile('save.txt'):             #path exists or not
     with open ("save.txt", 'r') as f:
         tempApps = f.read()
