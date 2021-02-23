@@ -15,6 +15,8 @@ driver.get("https://en.wikipedia.org/wiki/Python_(programming_language")
 #to get the title of the web-page we are accessing: 
 print(driver.title)
 search = driver.find_element_by_id("searchInput")     #you can find element by id name class and so on 
+
+search.clear()                                        #this is done to prevent any previous text from being appended
 search.send_keys("computer")                          #this is the term we are inputting in the search bar 
 search.send_keys(Keys.RETURN)                                    #hitting the enter/carriage return key
 
